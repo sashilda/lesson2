@@ -17,7 +17,7 @@ def occupation_by_age(age):
         result = 'work'
     return result    
 
-#----maim module
+#----main module
 age = input("What's your age?")
 int_age = int(age)
 
