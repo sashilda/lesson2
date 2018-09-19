@@ -4,9 +4,9 @@ question_answer = {"How are you?":          "I am fine!",
                     "How to exit?":         "Say:'Bye!"}   
 BYE_MSG = 'Well, bye!'
 
-def ask_user(chat_dictionary):
+def ask_user():
 
-    c = chat_dictionary
+    c = question_answer
 
     print(" How are you ? ")
 
@@ -29,7 +29,6 @@ def ask_user(chat_dictionary):
             print(BYE_MSG)
             break
 
-            
-    
+if __name__ == "__main__":               
 
-ask_user(question_answer)
+    ask_user()
