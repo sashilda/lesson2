@@ -1,5 +1,8 @@
-question_answer = {"How are you?":"I am fine!","What are you doing?":" Chating with you ",
-"Help me!":"Help me somebody, blyat'!", "How to exit?":"Say:'By!"}   
+question_answer = {"How are you?":          "I am fine!",
+                    "What are you doing?":  " Chating with you ",
+                    "Help me!":             "Help me somebody, blyat'!", 
+                    "How to exit?":         "Say:'Bye!"}   
+
 
 def ask_user(chat_dictionary):
 
@@ -12,7 +15,7 @@ def ask_user(chat_dictionary):
         user_say = str(user_say)
         user_say = user_say.capitalize()
            
-        if user_say == 'By!':
+        if user_say == 'Bye!':
             print('Well, bye!')
             break
         elif user_say in c.keys():
