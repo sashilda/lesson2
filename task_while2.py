@@ -2,7 +2,7 @@ question_answer = {"How are you?":          "I am fine!",
                     "What are you doing?":  " Chating with you ",
                     "Help me!":             "Help me somebody, blyat'!", 
                     "How to exit?":         "Say:'Bye!"}   
-
+BYE_MSG = 'Well, bye!'
 
 def ask_user(chat_dictionary):
 
@@ -17,7 +17,7 @@ def ask_user(chat_dictionary):
             user_say = user_say.capitalize()
             
             if user_say == 'Bye!':
-                print('Well, bye!')
+                print(BYE_MSG)
                 break
             elif user_say in c:
                 print(c.get(user_say)) 
@@ -26,7 +26,7 @@ def ask_user(chat_dictionary):
 
         except KeyboardInterrupt as ex:
 
-            print('Well, bye!')
+            print(BYE_MSG)
             break
 
             
