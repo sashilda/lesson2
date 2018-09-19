@@ -18,7 +18,7 @@ def ask_user(chat_dictionary):
         if user_say == 'Bye!':
             print('Well, bye!')
             break
-        elif user_say in c.keys():
+        elif user_say in c:
             print(c.get(user_say)) 
         else: #if user_say not in c.keys():
             print("I'm not understand")
